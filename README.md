@@ -20,13 +20,19 @@ paper-feed pauses, complete output and QR readability on your actual printers.
 remains available for reference. Install build 20 over build 19; older APKs are not
 promised as in-place downgrades.
 
-For iPhone, existing internal testers can install **1.0.0 (17)** in TestFlight.
-This QA build includes the corresponding iOS printing-speed changes: removes
-per-chunk Bluetooth/Wi-Fi delays and uses the packet size supported by the BLE
-connection. Compare the same receipts on your printers and check complete output
-and QR readability. Open TestFlight using your existing internal tester invitation.
-GitHub does not provide an iPhone installer. Native app builds and delivery do
-not use Vercel.
+For iPhone, existing internal testers can install **1.0.0 (19)** in TestFlight.
+This QA build streams Bluetooth data when the printer advertises support, with
+queue backpressure and an acknowledged-write fallback. Build 17 still paused in
+physical testing; build 19 needs the same test before speed is considered fixed.
+
+Print the short Bluetooth test receipt and check timing, complete output and QR
+readability. If it still pauses or loses output, open **Receipt printers → Share
+last print details** and send the report with your printer model and observations.
+The report contains timings and transfer counters, without receipt/account data.
+Also compare a long receipt and your other compatible Bluetooth/Wi-Fi printers.
+
+Open TestFlight using your existing internal tester invitation. GitHub does not
+provide an iPhone installer. Native app builds and delivery do not use Vercel.
 
 Sign out before switching from production. QA and production share the same
 Android app ID; installing this APK replaces the current app. Downloads are
