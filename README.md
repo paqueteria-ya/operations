@@ -4,7 +4,25 @@ Official Android downloads for the Paquetería Ya staff and driver app.
 This repository contains distribution information and downloadable builds only.
 Application source code is maintained privately.
 
-## Android beta — unreleased software
+## Internal QA beta — printer testing
+
+**[Download Android QA build 19](https://github.com/paqueteria-ya/operations/releases/tag/v1.0.0-qa.19)**
+
+[Direct APK download](https://github.com/paqueteria-ya/operations/releases/download/v1.0.0-qa.19/paqueteria-ya-operations-android.apk)
+
+This build uses the **isolated QA environment**. Sign in with a QA/test account.
+It adds broader Bluetooth printer discovery, the POS XP-P1 BLE connection profile,
+58/80 mm paper choices and confirmation of a readable test before saving a printer.
+Physical printer compatibility still needs testing.
+
+For iPhone, existing internal testers can install **1.0.0 (16)** in TestFlight.
+That build also uses QA; GitHub does not provide an iPhone installer.
+
+Sign out before switching from production. QA and production share the same
+Android app ID; installing this APK replaces the current app. Downloads are
+public, while access to company records requires an authorized app account.
+
+## Production Android beta — unreleased software
 
 There is no stable release yet. Builds marked **Pre-release** are for testing.
 
@@ -12,7 +30,7 @@ There is no stable release yet. Builds marked **Pre-release** are for testing.
 
 [View all builds](https://github.com/paqueteria-ya/operations/releases)
 
-The current beta connects to **production**. Sign in with your production
+The production beta (build 18) connects to **production**. Sign in with your production
 account; changes affect real business records. Download access does not grant
 access to business records.
 
