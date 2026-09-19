@@ -6,17 +6,24 @@ Application source code is maintained privately.
 
 ## Internal QA beta — printer testing
 
-**[Download Android QA build 19](https://github.com/paqueteria-ya/operations/releases/tag/v1.0.0-qa.19)**
+**[Download Android QA build 20](https://github.com/paqueteria-ya/operations/releases/tag/v1.0.0-qa.20)**
 
-[Direct APK download](https://github.com/paqueteria-ya/operations/releases/download/v1.0.0-qa.19/paqueteria-ya-operations-android.apk)
+[Direct APK download](https://github.com/paqueteria-ya/operations/releases/download/v1.0.0-qa.20/paqueteria-ya-operations-android.apk)
 
 This build uses the **isolated QA environment**. Sign in with a QA/test account.
-It adds broader Bluetooth printer discovery, the POS XP-P1 BLE connection profile,
-58/80 mm paper choices and confirmation of a readable test before saving a printer.
-Physical printer compatibility still needs testing.
+Build 20 tests a fix for slow receipt printing: removes per-chunk Bluetooth/Wi-Fi
+pauses and negotiates larger BLE packets where supported. It retains the earlier
+printer discovery, 58/80 mm settings and confirmed test before saving. Compare
+paper-feed pauses, complete output and QR readability on your actual printers.
+
+[Previous Android QA build 19](https://github.com/paqueteria-ya/operations/releases/tag/v1.0.0-qa.19)
+remains available for reference. Install build 20 over build 19; older APKs are not
+promised as in-place downgrades.
 
 For iPhone, existing internal testers can install **1.0.0 (16)** in TestFlight.
-That build also uses QA; GitHub does not provide an iPhone installer.
+That build also uses QA, but **does not include build 20’s Android printing-speed
+fix**. No new iPhone build was created for this test. GitHub does not provide an
+iPhone installer.
 
 Sign out before switching from production. QA and production share the same
 Android app ID; installing this APK replaces the current app. Downloads are
