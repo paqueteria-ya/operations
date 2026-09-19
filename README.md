@@ -20,10 +20,13 @@ paper-feed pauses, complete output and QR readability on your actual printers.
 remains available for reference. Install build 20 over build 19; older APKs are not
 promised as in-place downgrades.
 
-For iPhone, existing internal testers can install **1.0.0 (16)** in TestFlight.
-That build also uses QA, but **does not include build 20’s Android printing-speed
-fix**. No new iPhone build was created for this test. GitHub does not provide an
-iPhone installer.
+For iPhone, existing internal testers can install **1.0.0 (17)** in TestFlight.
+This QA build includes the corresponding iOS printing-speed changes: removes
+per-chunk Bluetooth/Wi-Fi delays and uses the packet size supported by the BLE
+connection. Compare the same receipts on your printers and check complete output
+and QR readability. Open TestFlight using your existing internal tester invitation.
+GitHub does not provide an iPhone installer. Native app builds and delivery do
+not use Vercel.
 
 Sign out before switching from production. QA and production share the same
 Android app ID; installing this APK replaces the current app. Downloads are
