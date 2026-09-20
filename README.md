@@ -4,7 +4,29 @@ Official Android downloads for the Paquetería Ya staff and driver app.
 This repository contains distribution information and downloadable builds only.
 Application source code is maintained privately.
 
-## Current Android QA — build 22
+## Current Android QA — build 23
+
+**[Download QA build 23 — MC240 4×6 default](https://github.com/paqueteria-ya/operations/releases/tag/v1.0.0-qa.23)**
+
+[Direct APK download](https://github.com/paqueteria-ya/operations/releases/download/v1.0.0-qa.23/paqueteria-ya-operations-android.apk)
+
+New MC240 setup defaults to **4 × 6 in (approximately 102 × 152 mm)**. For a saved
+printer, open **Printers → your MC240 → Label size** and select 4 × 6 in. Existing
+saved choices are preserved until you change them; 100 × 150 mm remains available.
+The existing QA printer page, receipt discovery and separate defaults remain.
+
+Print one test once. The frame and bars are intentional; check that exactly one
+label comes out and no complete blank follows. An owner reported an extra blank
+label with build 22. **Its cause and a physical fix remain unconfirmed.** If it
+continues with matching stock, compare the same size/roll in MUNBYN Print. No
+automatic retry or speculative feed command has been added.
+
+Signed standalone QA APK; no Metro or Expo Go. Use a QA/test account. Sign out
+before switching from production; this replaces the same Operations app. Software
+checks passed; build 23 device retest and installation/upgrade checks are pending.
+No iOS installer is included.
+
+## Previous Android QA — build 22
 
 **[Download QA build 22 — current QA app with MC240](https://github.com/paqueteria-ya/operations/releases/tag/v1.0.0-qa.22)**
 
