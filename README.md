@@ -4,7 +4,24 @@ Official Android downloads for the Paquetería Ya staff and driver app.
 This repository contains distribution information and downloadable builds only.
 Application source code is maintained privately.
 
-## Internal QA beta — printer testing
+## MC240 label-printer QA test — build 21
+
+**[Download MC240 Android QA build 21](https://github.com/paqueteria-ya/operations/releases/tag/v1.0.0-qa.21)**
+
+[Direct APK download](https://github.com/paqueteria-ya/operations/releases/download/v1.0.0-qa.21/paqueteria-ya-operations-android.apk)
+
+Use a **QA/test account**. Open a QA package → Print label → MUNBYN MC240.
+Search, select the label stock, and print the test frame before sending package
+labels. Check the paper and scan the QR. Data receipt does not prove physical
+print completion, and interrupted jobs are never resent automatically.
+
+This is a focused MC240 candidate based on the approved main app. It does **not**
+include the QA-only receipt-printer features described for build 20 below. It
+replaces the same Android app; sign out before switching from production. No Metro
+server or Expo Go is needed. Physical MC240 compatibility and installation/upgrade
+checks remain pending on real devices. This download does not include iOS.
+
+## Receipt-printer QA test — build 20
 
 **[Download Android QA build 20](https://github.com/paqueteria-ya/operations/releases/tag/v1.0.0-qa.20)**
 
