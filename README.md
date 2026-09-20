@@ -4,7 +4,30 @@ Official Android downloads for the Paquetería Ya staff and driver app.
 This repository contains distribution information and downloadable builds only.
 Application source code is maintained privately.
 
-## MC240 label-printer QA test — build 21
+## Current Android QA — build 22
+
+**[Download QA build 22 — current QA app with MC240](https://github.com/paqueteria-ya/operations/releases/tag/v1.0.0-qa.22)**
+
+[Direct APK download](https://github.com/paqueteria-ya/operations/releases/download/v1.0.0-qa.22/paqueteria-ya-operations-android.apk)
+
+This includes the current selected QA mobile interface and its existing printer
+setup, discovery and saved-printer system, with MC240 label printing added.
+Existing Bluetooth and Wi-Fi receipt printers are retained.
+
+Use a **QA/test account**. Open **Printers → Add printer → Bluetooth label printer
+(MC240)**. Select stock, print the test frame and confirm the physical result before
+saving. Receipt and label defaults are separate. Then open a QA package → Print
+label → choose the saved MC240. Check the label edges and scan the package QR.
+
+Standalone signed APK; no Metro or Expo Go. Sign out before switching from
+production because this replaces the same Operations app. Physical-device install,
+upgrade and printer testing remain pending. Data receipt does not prove a label
+printed; interrupted jobs are never automatically resent. No iOS build is included.
+
+This replaces build 21's older main-based interface. Build 21 remains below as
+historical evidence; use build 22 for testing the combined QA printer system.
+
+## Previous MC240-only test — build 21 (superseded)
 
 **[Download MC240 Android QA build 21](https://github.com/paqueteria-ya/operations/releases/tag/v1.0.0-qa.21)**
 
