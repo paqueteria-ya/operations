@@ -4,6 +4,23 @@ Official Android downloads for the Paquetería Ya staff and driver app.
 This repository contains distribution information and downloadable builds only.
 Application source code is maintained privately.
 
+## Current iOS QA — TestFlight 1.0.0 (20)
+
+Existing internal testers can install **1.0.0 (20)** through their existing
+TestFlight invitation. Apple confirms this build is valid and in internal beta
+testing. Use the **QA account**; sign out before switching from production.
+
+Includes the current QA printer pages, MC240 discovery/setup, separate receipt
+and label defaults, 4×6 stock selection and full-size package-label correction.
+Open **Printers → Add printer → Bluetooth label printer (MC240)**. Select 4×6,
+print one test once, then print one actual package label. Check size, orientation,
+QR scanning and the number of physical labels fed. iOS MC240 hardware testing is
+still required; the owner-reported extra blank feed on Android remains unresolved.
+
+The iOS archive, signing, QA configuration and native modules were verified.
+No backend/schema change or migration is required. No public IPA or App Store
+production release is included; existing internal TestFlight access is retained.
+
 ## Current Android QA — build 24
 
 **[Download QA build 24 — full-size 4×6 package labels](https://github.com/paqueteria-ya/operations/releases/tag/v1.0.0-qa.24)**
@@ -103,7 +120,8 @@ paper-feed pauses, complete output and QR readability on your actual printers.
 remains available for reference. Install build 20 over build 19; older APKs are not
 promised as in-place downgrades.
 
-For iPhone, existing internal testers can install **1.0.0 (19)** in TestFlight.
+Historical iPhone receipt-testing build: **1.0.0 (19)** in TestFlight.
+Use the current iOS build 20 above for MC240 testing.
 This QA build streams Bluetooth data when the printer advertises support, with
 queue backpressure and an acknowledged-write fallback. Build 17 still paused in
 physical testing; build 19 needs the same test before speed is considered fixed.
