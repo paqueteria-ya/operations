@@ -4,7 +4,28 @@ Official Android downloads for the Paquetería Ya staff and driver app.
 This repository contains distribution information and downloadable builds only.
 Application source code is maintained privately.
 
-## Current Android QA — build 23
+## Current Android QA — build 24
+
+**[Download QA build 24 — full-size 4×6 package labels](https://github.com/paqueteria-ya/operations/releases/tag/v1.0.0-qa.24)**
+
+[Direct APK download](https://github.com/paqueteria-ya/operations/releases/download/v1.0.0-qa.24/paqueteria-ya-operations-android.apk)
+
+Corrects package content printing at 75% size on 4×6 shipping labels. The print
+layout now uses physical points throughout. The existing QA printer discovery,
+setup, separate receipt/label defaults and 4×6 stock selection are retained.
+
+Use a QA/test account. Select **Printers → your MC240 → Label size → 4 × 6 in**,
+then print one package once. Check full-size content, scan the QR and count labels.
+Software tests and rendered PDF pagination pass; this build still needs a physical
+retest. The previously reported complete extra blank label after the test pattern
+is a separate unresolved issue. No automatic print retry has been added.
+
+Signed standalone APK, no Metro or Expo Go. Sign out before switching from
+production; it replaces the same Operations app. Installation/upgrade and iOS
+hardware checks remain pending; no iOS installer is included. No backend or
+schema change or migration is required.
+
+## Previous Android QA — build 23
 
 **[Download QA build 23 — MC240 4×6 default](https://github.com/paqueteria-ya/operations/releases/tag/v1.0.0-qa.23)**
 
